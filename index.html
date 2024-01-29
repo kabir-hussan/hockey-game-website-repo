@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"  class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's Website</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/fd5f8e05ac.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind css with daisyUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind customization -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bg-primary-btn': '#FF4240',
+                'menu-primary': '#424247',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body class="font-manrope">
+    <header class="sticky top-0 bg-white z-20 my-6" >
+        <div class="container">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+      
+                  <div class="nav-item lg:hidden md:hidden visivle ">
+                    <label for="Click"><i class="fa-solid fa-bars text-2xl"></i></label>
+                    <input type="checkbox" class=" invisible hidden" name="" id="Click">
+                    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow bg-base-100 min-w-52 rounded-box">
+                      <li> <a class="text-[#FF4240] font-medium ">Home</a> </li>
+                      <li> <a class="text-menu-primary font-medium">About</a> </li>
+                      <li> <a class="text-menu-primary font-medium">Pages</a> </li>
+                      <li> <a class="text-menu-primary font-medium">Blog</a> </li>
+                      <li> <a class="text-menu-primary font-medium">Contact</a> </li>
+                    </ul>
+                  </div>
+      
+                  <a class="btn btn-ghost text-3xl font-extrabold">Hockey<span class="text-bg-primary-btn">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li> <a class="text-[#FF4240] font-medium">Home</a> </li>
+                    <li> <a class="text-menu-primary font-medium">About</a> </li>
+                    <li> <a class="text-menu-primary font-medium ">Pages</a> </li>
+                    <li> <a class="text-menu-primary font-medium ">Blog</a> </li>
+                    <li> <a class="text-menu-primary font-medium ">Contact</a> </li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <a href=" "> <i class="fa-solid fa-magnifying-glass mx-3 invisible md:visible lg:visible"></i> </a>
+                  <a href="" class="btn bg-bg-primary-btn border-none text-white">Buy Ticket</a>
+                </div>
+              </div>
+        </div>
+    </header>
+    
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/* css styles */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.font-manrope{
+    font-family: 'Manrope', sans-serif;
+}
+
+
+input#name, input#email, input#subject, input#Number, textarea#message {
+    width: 95%;
+}
+
+img{
+    width: 100%;
+}
+
+.nav-item{
+    position: relative;
+}
+.nav-item input#Click:checked ~ ul {
+    visibility: visible;
+    display: block;
+}
+
+.nav-item ul{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: green;
+    
+}
+.navbar ul li{
+    margin-right: 2rem;
+}
+.nav-item ul li a{
+    color: #fff;
+}

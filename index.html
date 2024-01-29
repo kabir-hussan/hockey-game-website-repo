@@ -5,10 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hockey's Website</title>
-
-  <!-- css link -->
-  <link rel="stylesheet" href="styles/style.css">
-
   <!-- font manrope -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +35,51 @@
       }
     }
   </script>
+
+<!-- css style -->
+  <style>
+  .container{
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .font-manrope{
+    font-family: 'Manrope', sans-serif;
+  }
+
+
+  input#name, input#email, input#subject, input#Number, textarea#message {
+    width: 95%;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .nav-item{
+    position: relative;
+  }
+  .nav-item input#Click:checked ~ ul {
+    visibility: visible;
+    display: block;
+  }
+
+  .nav-item ul{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: green;
+    
+  }
+  .navbar ul li{
+    margin-right: 2rem;
+  }
+  .nav-item ul li a{
+    color: #fff;
+  }
+  </style>
 
 </head>
 
@@ -448,7 +489,126 @@
         </div>
       </div>
     </section>
+
+    <!-- Get In Touch section is here -->
+    <section class="my-12">
+      <div class="container">
+        <div class="text-center border-dashed border-y-1 lg:py-10">
+            <h1 class="title-color text-3xl lg:text-4xl font-extrabold tracking-wide"> Get In Touch </h1>
+            <p class="text-text-color lg:w-3/4 mx-auto p-5 text-xl ">We are always try to provide the best product to the customer.They are always happy with us.</p>
+        </div>
+
+        <!-- grid container -->
+
+        <div class="grid lg:grid lg:grid-cols-5 gap-6">
+          <div class="border lg:col-span-2 p-5 rounded-md">
+            <div class="bg-[#BCED6D1A] mt-5 space-y-3">
+              <img class="w-10" src="Images/Group 1171275317.png" alt="">
+              <p class="text-text-color text-sm "> Phone Number : <br> <a class="font-bold text-base text-title-color" href="tel:+8801781784922"> +8801781784922</a> </p>
+            </div>
+            
+            <div class="bg-[#BCED6D1A] mt-5 space-y-3">
+              <img class="w-10" src="Images/Group 1171275318.png" alt="">
+              <p class="text-text-color text-sm "> Email : <br> <a class="font-bold text-base text-title-color" href="mailto:kabirhussan891@gmail.com">kabirhussan891@gmail.com</a> </p>
+            </div>
+            
+            <div class="bg-[#BCED6D1A] mt-5 space-y-3">
+              <img class="w-10" src="Images/Group 1171275321.png" alt="">
+              <p class="text-text-color text-sm "> Location : <br> <a class="font-bold text-base text-title-color" href=" "> 
+                Sylhet Engineering College,Sylhet </a> </p>
+            </div>
+          </div>
+          
+          <div class="lg:col-span-3 ml-3">
+            <div class="lg:grid lg:grid-cols-2">
+              <div class="my-3">
+                <label class="font-bold text-title-color" for="name">Your Name</label> <br>
+                <input type="text" class="bg-[#13131808] rounded-md p-3" placeholder="Your Name" id="name">
+              </div>
+  
+              <div class="my-3">
+                <label class="font-bold text-title-color" for="email">Your Email</label> <br>
+                <input type="text"  class="bg-[#13131808] p-3 rounded-md" placeholder="Your Email" id="email">
+              </div>
+
+              <div class="my-3">
+                <label class="font-bold text-title-color" for="subject">Subject</label> <br>
+                <input type="text"  class="bg-[#13131808] rounded-md p-3" placeholder="Subject" id="subject">
+              </div>
+
+              <div class="my-3">
+                <label class="font-bold text-title-color" for="Number">Your Number</label> <br>
+                <input type="number"  class="bg-[#13131808] rounded-md p-3" id="Number" placeholder="Mobile Number">
+              </div>
+
+              <div class="my-3">
+                <label class="font-bold text-title-color" for="message">Your Name</label> <br>
+                <textarea  class="bg-[#13131808] rounded-md p-3 w-full" placeholder="Message" id="message" rows="5"></textarea>
+              </div>
+            </div>
+            <div class=" text-center">
+              <a href="" class="btn bg-bg-primary-btn border-none hover:bg-amber-400 text-white w-full">Subscribe Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media  Section is here-->
+        <div class="social-media text-center lg:my-20 mt-10 ">
+          <h1 class="title-color text-3xl lg:text-4xl font-extrabold tracking-wide"> Social Media </h1>
+          <ul class="bg-[rgba(19, 19, 24, 0.03)] flex justify-center my-4">
+            <li class="text-2xl"> <a class="p-2"> <i class="fa-brands fa-facebook"></i> </a> </li>
+            <li class="text-2xl"> <a class="p-2"> <i class="fa-brands fa-linkedin-in"></i> </a> </li>
+            <li class="text-2xl"> <a class="p-2"> <i class="fa-brands fa-github"></i> </a> </li>
+            <li class="text-2xl"> <a class="p-2"> <i class="fa-brands fa-youtube"></i> </a> </li>
+            <li class="text-2xl"> <a class="p-2"><i class="fa-brands fa-instagram"></i> </a> </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- footer section -->
+
+  <section class="footer p-10 bg-title-color text-base-content py-20">
+    <div class="footer grid lg:grid-cols-3 gap-5 place-items-center items-start">
+      <div class="description">
+        <h1 class="text-white font-extrabold text-3xl">Get In Touch</h1>
+        <p class="text-white" >Dutch Bangla Bank Limited<br/>Trustworthy Bank in BD</p>
+        <p><a href="mailto:kabirhussan891@gmail.com" class="link link-hover text-white " > <i class="fa-regular fa-envelope text-bg-primary-btn text-xl mr-2"></i> kabirhussan891@gmail.com</a></p>
+        <p><a href="tel:+8801781784922" class="link link-hover text-white "> <i class="fa-solid fa-phone text-bg-primary-btn text-xl mr-2"></i> +8801781784922</a></p>
+      </div>
+  
+      <div class="flex justify-between lg:gap-52">
+  
+      <div>
+        <header class="footer-title text-white">Company</header> 
+        <a class="link link-hover text-white block">About us</a>
+        <a class="link link-hover text-white block">Leadership</a>
+        <a class="link link-hover text-white block">News & Article</a>
+        <a class="link link-hover text-white block">Legal Notice</a>
+      </div>
+  
+      <div>
+        <header class="footer-title text-white">Support</header> 
+        <a class="link link-hover text-white block">Help Center</a>
+        <a class="link link-hover text-white block">FAQ</a>
+        <a class="link link-hover text-white block">Ticket Support</a>
+        <a class="link link-hover text-white block">Contact Us</a>
+      </div>
+  
+      </div>
+      <div >
+        <header class="footer-title text-white">Services</header>
+       <a class="link link-hover text-white">Academy</a>
+       <a class="link link-hover text-white">Group Lesson</a>
+       <a class="link link-hover text-white">Hockeys for kids</a>
+       <a class="link link-hover text-white">Hockeys for Adult</a>
+      </div>
+  
+    </div>
+  </section>
+  
 </body>
 
 </html>
